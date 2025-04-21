@@ -1,0 +1,49 @@
+<div class="row justify-content-center">
+  <div class="col-md-6 col-lg-4">
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-title text-center mb-4">Login</h2>
+        <form (ngSubmit)="onSubmit()">
+          <div class="mb-3">
+            <label for="username" class="form-label">Username:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              [(ngModel)]="username"
+              name="username"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password:</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              [(ngModel)]="password"
+              name="password"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+        <p *ngIf="error" class="alert alert-danger mt-3">{{ error }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- passwords -->
+  <div class="d-flex justify-content-evenly">
+    <div>
+      <h3>for Admin:</h3>
+      <p>username: admin</p>
+      <p>password: admin</p>
+    </div>
+    <div>
+      <h3>for User:</h3>
+      <p>username: user</p>
+      <p>password: user</p>
+    </div>
+  </div>
+</div>

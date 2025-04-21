@@ -1,0 +1,26 @@
+/* Global styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.card {
+  border-radius: 8px;
+  border: none;
+  transition: box-shadow 0.3s ease;
+  
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.btn {
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-1px);
+  }
+}
